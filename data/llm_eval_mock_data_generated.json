@@ -1,0 +1,272 @@
+[
+    {
+        "id": "hr_001",
+        "task_type": "rag_faq",
+        "model": "model_A_good_semantics",
+        "query": "What is the policy for annual leave accrual?",
+        "reference_answer": "Employees accrue 15 days of annual leave per year, with a maximum carry-over of 5 days to the next year. Leave is prorated for part-time staff.",
+        "llm_output": "You accrue 15 days of annual leave per year, with 5 days carry-over. Part-time staff leave is prorated. This is our standard HR policy.",
+        "test_description": "HR Policy: What is the policy for annual leave accr...",
+        "test_config": "HR_Policy_FAQ"
+    },
+    {
+        "id": "hr_002",
+        "task_type": "rag_faq",
+        "model": "model_B_partial_semantics",
+        "query": "What is the policy for annual leave accrual?",
+        "reference_answer": "Employees accrue 15 days of annual leave per year, with a maximum carry-over of 5 days to the next year. Leave is prorated for part-time staff.",
+        "llm_output": "Annual leave information is available. Please consult the HR handbook for specifics.",
+        "test_description": "HR Policy: What is the policy for annual leave accr...",
+        "test_config": "HR_Policy_FAQ"
+    },
+    {
+        "id": "hr_003",
+        "task_type": "rag_faq",
+        "model": "model_C_poor_lexical_diff_semantics",
+        "query": "What is the policy for annual leave accrual?",
+        "reference_answer": "Employees accrue 15 days of annual leave per year, with a maximum carry-over of 5 days to the next year. Leave is prorated for part-time staff.",
+        "llm_output": "Taking time off is good for mental health. Remember to relax.",
+        "test_description": "HR Policy: What is the policy for annual leave accr...",
+        "test_config": "HR_Policy_FAQ"
+    },
+    {
+        "id": "hr_004",
+        "task_type": "rag_faq",
+        "model": "model_A_good_semantics",
+        "query": "How do I submit a reimbursement claim for business travel?",
+        "reference_answer": "Business travel reimbursement claims must be submitted via the HR portal within 30 days of travel, attaching all original receipts. Approval typically takes 5 business days.",
+        "llm_output": "You accrue 15 days of annual leave per year, with 5 days carry-over. Part-time staff leave is prorated. This is our standard HR policy.",
+        "test_description": "HR Policy: How do I submit a reimbursement claim fo...",
+        "test_config": "HR_Policy_FAQ"
+    },
+    {
+        "id": "hr_005",
+        "task_type": "rag_faq",
+        "model": "model_B_partial_semantics",
+        "query": "How do I submit a reimbursement claim for business travel?",
+        "reference_answer": "Business travel reimbursement claims must be submitted via the HR portal within 30 days of travel, attaching all original receipts. Approval typically takes 5 business days.",
+        "llm_output": "Annual leave information is available. Please consult the HR handbook for specifics.",
+        "test_description": "HR Policy: How do I submit a reimbursement claim fo...",
+        "test_config": "HR_Policy_FAQ"
+    },
+    {
+        "id": "hr_006",
+        "task_type": "rag_faq",
+        "model": "model_C_poor_lexical_diff_semantics",
+        "query": "How do I submit a reimbursement claim for business travel?",
+        "reference_answer": "Business travel reimbursement claims must be submitted via the HR portal within 30 days of travel, attaching all original receipts. Approval typically takes 5 business days.",
+        "llm_output": "Taking time off is good for mental health. Remember to relax.",
+        "test_description": "HR Policy: How do I submit a reimbursement claim fo...",
+        "test_config": "HR_Policy_FAQ"
+    },
+    {
+        "id": "hr_007",
+        "task_type": "rag_faq",
+        "model": "model_A_good_semantics",
+        "query": "Can I work from home if I have a sick child?",
+        "reference_answer": "Our company policy allows for remote work in cases of dependent care. Please notify your manager and HR, and ensure your work can be completed remotely.",
+        "llm_output": "You accrue 15 days of annual leave per year, with 5 days carry-over. Part-time staff leave is prorated. This is our standard HR policy.",
+        "test_description": "HR Policy: Can I work from home if I have a sick ch...",
+        "test_config": "HR_Policy_FAQ"
+    },
+    {
+        "id": "hr_008",
+        "task_type": "rag_faq",
+        "model": "model_B_partial_semantics",
+        "query": "Can I work from home if I have a sick child?",
+        "reference_answer": "Our company policy allows for remote work in cases of dependent care. Please notify your manager and HR, and ensure your work can be completed remotely.",
+        "llm_output": "Annual leave information is available. Please consult the HR handbook for specifics.",
+        "test_description": "HR Policy: Can I work from home if I have a sick ch...",
+        "test_config": "HR_Policy_FAQ"
+    },
+    {
+        "id": "hr_009",
+        "task_type": "rag_faq",
+        "model": "model_C_poor_lexical_diff_semantics",
+        "query": "Can I work from home if I have a sick child?",
+        "reference_answer": "Our company policy allows for remote work in cases of dependent care. Please notify your manager and HR, and ensure your work can be completed remotely.",
+        "llm_output": "Taking time off is good for mental health. Remember to relax.",
+        "test_description": "HR Policy: Can I work from home if I have a sick ch...",
+        "test_config": "HR_Policy_FAQ"
+    },
+    {
+        "id": "fin_010",
+        "task_type": "rag_faq",
+        "model": "model_A_good_semantics",
+        "query": "What is the current interest rate for a 30-year fixed mortgage?",
+        "reference_answer": "As of today, May 25, 2025, the interest rate for a 30-year fixed mortgage is approximately 6.85%. This rate is subject to change based on market conditions.",
+        "llm_output": "The 30-year fixed mortgage rate is currently around 6.85% as of today. Please note, rates can change due to market conditions.",
+        "test_description": "Finance Product Info: What is the current interest rate for a ...",
+        "test_config": "Financial_Product_Info"
+    },
+    {
+        "id": "fin_011",
+        "task_type": "rag_faq",
+        "model": "model_B_partial_semantics",
+        "query": "What is the current interest rate for a 30-year fixed mortgage?",
+        "reference_answer": "As of today, May 25, 2025, the interest rate for a 30-year fixed mortgage is approximately 6.85%. This rate is subject to change based on market conditions.",
+        "llm_output": "Mortgage rates are available on our website. They can fluctuate.",
+        "test_description": "Finance Product Info: What is the current interest rate for a ...",
+        "test_config": "Financial_Product_Info"
+    },
+    {
+        "id": "fin_012",
+        "task_type": "rag_faq",
+        "model": "model_C_poor_lexical_diff_semantics",
+        "query": "What is the current interest rate for a 30-year fixed mortgage?",
+        "reference_answer": "As of today, May 25, 2025, the interest rate for a 30-year fixed mortgage is approximately 6.85%. This rate is subject to change based on market conditions.",
+        "llm_output": "Investing in stocks can be risky. Diversify your portfolio.",
+        "test_description": "Finance Product Info: What is the current interest rate for a ...",
+        "test_config": "Financial_Product_Info"
+    },
+    {
+        "id": "fin_013",
+        "task_type": "rag_faq",
+        "model": "model_A_good_semantics",
+        "query": "Explain the concept of compound interest.",
+        "reference_answer": "Compound interest is the interest on a loan or deposit calculated based on both the initial principal and the accumulated interest from previous periods. It's 'interest on interest'.",
+        "llm_output": "The 30-year fixed mortgage rate is currently around 6.85% as of today. Please note, rates can change due to market conditions.",
+        "test_description": "Finance Product Info: Explain the concept of compound interest...",
+        "test_config": "Financial_Product_Info"
+    },
+    {
+        "id": "fin_014",
+        "task_type": "rag_faq",
+        "model": "model_B_partial_semantics",
+        "query": "Explain the concept of compound interest.",
+        "reference_answer": "Compound interest is the interest on a loan or deposit calculated based on both the initial principal and the accumulated interest from previous periods. It's 'interest on interest'.",
+        "llm_output": "Mortgage rates are available on our website. They can fluctuate.",
+        "test_description": "Finance Product Info: Explain the concept of compound interest...",
+        "test_config": "Financial_Product_Info"
+    },
+    {
+        "id": "fin_015",
+        "task_type": "rag_faq",
+        "model": "model_C_poor_lexical_diff_semantics",
+        "query": "Explain the concept of compound interest.",
+        "reference_answer": "Compound interest is the interest on a loan or deposit calculated based on both the initial principal and the accumulated interest from previous periods. It's 'interest on interest'.",
+        "llm_output": "Investing in stocks can be risky. Diversify your portfolio.",
+        "test_description": "Finance Product Info: Explain the concept of compound interest...",
+        "test_config": "Financial_Product_Info"
+    },
+    {
+        "id": "fin_016",
+        "task_type": "rag_faq",
+        "model": "model_A_good_semantics",
+        "query": "What are the requirements to open a new savings account?",
+        "reference_answer": "To open a new savings account, you need a valid government-issued ID, proof of address, and an initial deposit of at least $100. You must be 18 years or older.",
+        "llm_output": "The 30-year fixed mortgage rate is currently around 6.85% as of today. Please note, rates can change due to market conditions.",
+        "test_description": "Finance Product Info: What are the requirements to open a new ...",
+        "test_config": "Financial_Product_Info"
+    },
+    {
+        "id": "fin_017",
+        "task_type": "rag_faq",
+        "model": "model_B_partial_semantics",
+        "query": "What are the requirements to open a new savings account?",
+        "reference_answer": "To open a new savings account, you need a valid government-issued ID, proof of address, and an initial deposit of at least $100. You must be 18 years or older.",
+        "llm_output": "Mortgage rates are available on our website. They can fluctuate.",
+        "test_description": "Finance Product Info: What are the requirements to open a new ...",
+        "test_config": "Financial_Product_Info"
+    },
+    {
+        "id": "fin_018",
+        "task_type": "rag_faq",
+        "model": "model_C_poor_lexical_diff_semantics",
+        "query": "What are the requirements to open a new savings account?",
+        "reference_answer": "To open a new savings account, you need a valid government-issued ID, proof of address, and an initial deposit of at least $100. You must be 18 years or older.",
+        "llm_output": "Investing in stocks can be risky. Diversify your portfolio.",
+        "test_description": "Finance Product Info: What are the requirements to open a new ...",
+        "test_config": "Financial_Product_Info"
+    },
+    {
+        "id": "brn_019",
+        "task_type": "rag_faq",
+        "model": "model_A_good_semantics",
+        "query": "What are the operating hours of the main branch in downtown Singapore?",
+        "reference_answer": "The main branch in downtown Singapore operates from 9:00 AM to 5:00 PM on weekdays (Monday-Friday) and is closed on weekends and public holidays.",
+        "llm_output": "The main branch in downtown Singapore is open from 9 AM to 5 PM on weekdays. It's closed on weekends and public holidays.",
+        "test_description": "Branch/ATM Query: What are the operating hours of the main...",
+        "test_config": "Branch_Operations_Info"
+    },
+    {
+        "id": "brn_020",
+        "task_type": "rag_faq",
+        "model": "model_B_partial_semantics",
+        "query": "What are the operating hours of the main branch in downtown Singapore?",
+        "reference_answer": "The main branch in downtown Singapore operates from 9:00 AM to 5:00 PM on weekdays (Monday-Friday) and is closed on weekends and public holidays.",
+        "llm_output": "Our branches have varying operating hours. Please check the branch locator on our website.",
+        "test_description": "Branch/ATM Query: What are the operating hours of the main...",
+        "test_config": "Branch_Operations_Info"
+    },
+    {
+        "id": "brn_021",
+        "task_type": "rag_faq",
+        "model": "model_C_poor_lexical_diff_semantics",
+        "query": "What are the operating hours of the main branch in downtown Singapore?",
+        "reference_answer": "The main branch in downtown Singapore operates from 9:00 AM to 5:00 PM on weekdays (Monday-Friday) and is closed on weekends and public holidays.",
+        "llm_output": "Singapore has many beautiful places to visit, including Marina Bay.",
+        "test_description": "Branch/ATM Query: What are the operating hours of the main...",
+        "test_config": "Branch_Operations_Info"
+    },
+    {
+        "id": "brn_022",
+        "task_type": "rag_faq",
+        "model": "model_A_good_semantics",
+        "query": "Is the Orchard Road branch open on Saturday?",
+        "reference_answer": "No, the Orchard Road branch is closed on Saturdays. It operates Monday to Friday from 9:30 AM to 6:00 PM.",
+        "llm_output": "The main branch in downtown Singapore is open from 9 AM to 5 PM on weekdays. It's closed on weekends and public holidays.",
+        "test_description": "Branch/ATM Query: Is the Orchard Road branch open on Satur...",
+        "test_config": "Branch_Operations_Info"
+    },
+    {
+        "id": "brn_023",
+        "task_type": "rag_faq",
+        "model": "model_B_partial_semantics",
+        "query": "Is the Orchard Road branch open on Saturday?",
+        "reference_answer": "No, the Orchard Road branch is closed on Saturdays. It operates Monday to Friday from 9:30 AM to 6:00 PM.",
+        "llm_output": "Our branches have varying operating hours. Please check the branch locator on our website.",
+        "test_description": "Branch/ATM Query: Is the Orchard Road branch open on Satur...",
+        "test_config": "Branch_Operations_Info"
+    },
+    {
+        "id": "brn_024",
+        "task_type": "rag_faq",
+        "model": "model_C_poor_lexical_diff_semantics",
+        "query": "Is the Orchard Road branch open on Saturday?",
+        "reference_answer": "No, the Orchard Road branch is closed on Saturdays. It operates Monday to Friday from 9:30 AM to 6:00 PM.",
+        "llm_output": "Singapore has many beautiful places to visit, including Marina Bay.",
+        "test_description": "Branch/ATM Query: Is the Orchard Road branch open on Satur...",
+        "test_config": "Branch_Operations_Info"
+    },
+    {
+        "id": "brn_025",
+        "task_type": "rag_faq",
+        "model": "model_A_good_semantics",
+        "query": "Where is the nearest ATM to my current location (10 Bayfront Avenue)?",
+        "reference_answer": "The nearest ATM to 10 Bayfront Avenue is located at Marina Bay Sands, Level 1, near the taxi stand. It is accessible 24/7.",
+        "llm_output": "The main branch in downtown Singapore is open from 9 AM to 5 PM on weekdays. It's closed on weekends and public holidays.",
+        "test_description": "Branch/ATM Query: Where is the nearest ATM to my current l...",
+        "test_config": "Branch_Operations_Info"
+    },
+    {
+        "id": "brn_026",
+        "task_type": "rag_faq",
+        "model": "model_B_partial_semantics",
+        "query": "Where is the nearest ATM to my current location (10 Bayfront Avenue)?",
+        "reference_answer": "The nearest ATM to 10 Bayfront Avenue is located at Marina Bay Sands, Level 1, near the taxi stand. It is accessible 24/7.",
+        "llm_output": "Our branches have varying operating hours. Please check the branch locator on our website.",
+        "test_description": "Branch/ATM Query: Where is the nearest ATM to my current l...",
+        "test_config": "Branch_Operations_Info"
+    },
+    {
+        "id": "brn_027",
+        "task_type": "rag_faq",
+        "model": "model_C_poor_lexical_diff_semantics",
+        "query": "Where is the nearest ATM to my current location (10 Bayfront Avenue)?",
+        "reference_answer": "The nearest ATM to 10 Bayfront Avenue is located at Marina Bay Sands, Level 1, near the taxi stand. It is accessible 24/7.",
+        "llm_output": "Singapore has many beautiful places to visit, including Marina Bay.",
+        "test_description": "Branch/ATM Query: Where is the nearest ATM to my current l...",
+        "test_config": "Branch_Operations_Info"
+    }
+]

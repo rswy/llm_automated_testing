@@ -1,0 +1,121 @@
+name: llm_test
+channels:
+  - defaults
+  - conda-forge # Recommend conda-forge for broader package availability
+dependencies:
+  - python=3.9 # Use the specific Python version you developed with
+  - pip
+  - pandas
+  - numpy
+  - matplotlib
+  - streamlit
+  - scikit-learn
+  - nltk
+  
+  - openpyxl # For excel
+  - tabulate # For report generation (CLI)
+
+  # Steramlit & Plotting
+  - streamlit
+  - plotly
+  - tqdm
+
+  # Specific NLP Metrics Libraries
+  - rouge-score>=0.1.0,<0.2.0
+  - sacrebleu>=2.0.0,<3.0.0 # Note: NLTK's BLEU is also an option but SacreBLEU is often preferred
+  
+
+    # For CPU-only:
+  - pytorch::pytorch # Use the pytorch channel
+  - torchvision     # Often a companion to PyTorch
+  - torchaudio      # Often a companion to PyTorch
+  
+  - pip:
+    - sentence-transformers
+    - requests  # For byob api calling
+    - conda-pack # Required to create the relocatable environment
+    - pyinstaller # Required if you plan to build executables
+    - fastapi # New: For building the API
+    - uvicorn[standard] # New: For running the FastAPI server
+    
+
+
+
+# name: llm_eval_tool_env  # Choose a name for your environment
+# channels:
+#   - defaults
+#   - conda-forge
+#   - pytorch         # For PyTorch and related packages like sentence-transformers
+#   - anaconda        # Often a good fallback
+
+# dependencies:
+#   - python=3.11 # Or your specific Python version
+#   - pip
+
+#   - pandas
+#   - matplotlib
+#   - numpy
+#   - scikit-learn
+#   - nltk
+
+#   - openpyxl # For excel
+#   - tabulate # For report generation (CLI)
+
+#   # Steramlit & Plotting
+#   - streamlit
+#   - plotly
+#   - tqdm
+
+#   # Specific NLP Metrics Libraries
+#   - rouge-score>=0.1.0,<0.2.0
+#   - sacrebleu>=2.0.0,<3.0.0 # Note: NLTK's BLEU is also an option but SacreBLEU is often preferred
+  
+
+#     # For CPU-only:
+#   - pytorch::pytorch # Use the pytorch channel
+#   - torchvision     # Often a companion to PyTorch
+#   - torchaudio      # Often a companion to PyTorch
+#   - sentence-transformers # This should now resolve PyTorch from the pytorch channel
+
+
+#   - pyinstaller # Add PyInstaller
+  
+#   - pip:
+#     - sentence-transformers
+
+
+
+
+
+
+
+# dependencies:
+#   - python=3.11     # Specify your desired Python version
+#   - pip
+#   # Core Data Science & NLP
+#   - pandas>=1.5.0,<3.0.0
+#   - numpy>=1.20.0,<2.0.0
+#   - matplotlib
+#   - scikit-learn>=1.0.0,<2.0.0
+#   - nltk>=3.6.0,<4.0.0
+#   - openpyxl>=3.0.0,<4.0.0 # For Excel
+#   - tabulate                # For report generation (CLI)
+#   # Streamlit and Plotting
+#   - streamlit>=1.28.0,<2.0.0
+#   - plotly>=5.10.0,<6.0.0
+#   # Specific NLP Metrics Libraries
+#   - rouge-score>=0.1.0,<0.2.0
+#   - sacrebleu>=2.0.0,<3.0.0 # Note: NLTK's BLEU is also an option but SacreBLEU is often preferred
+#   # PyTorch and Sentence Transformers
+#   # sentence-transformers will pull in PyTorch. Explicitly listing PyTorch can help.
+#   # Check the latest PyTorch installation command for your OS/CUDA version from pytorch.org
+#   # For CPU-only:
+#   - pytorch::pytorch # Use the pytorch channel
+#   - torchvision     # Often a companion to PyTorch
+#   - torchaudio      # Often a companion to PyTorch
+#   - sentence-transformers # This should now resolve PyTorch from the pytorch channel
+#   # Pip dependencies (for packages not readily available on Conda or for specific versions)
+#   # Conda will run pip after installing conda packages.
+#   # - pip:
+#   #   - some-pip-only-package==1.0 
+#   #   - -r ./requirements_pip_only.txt # If you have a separate file for pip-only
